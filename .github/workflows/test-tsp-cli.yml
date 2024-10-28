@@ -1,0 +1,23 @@
+name: Travelling salesman cli/image with GitHub Actions
+on: [push]
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.12
+        
+      - name: install packages
+        run: make install
+      - name: lint the code
+        run: make lint
+      - name: test the code
+        run: make test
+      - name: format the code
+        run: make format
+      - name: deploy
+        run: make deploy

@@ -1,5 +1,7 @@
 # travelling-salesman-cli
 
+[![Travelling salesman cli/image with GitHub Actions](https://github.com/bemarina/travelling-salesman-cli/actions/workflows/test-tsp-cli.yml/badge.svg)](https://github.com/bemarina/travelling-salesman-cli/actions/workflows/test-tsp-cli.yml)
+
 This is a command-line tool that calculates the shortest path between 2-10 cities in the USA.
     This tool can also create an image that shows the calculated path.
 
